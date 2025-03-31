@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css"
+</head>
+
+<body>
+    <h1>Quizz</h1>
+    <div id="quizz">
+        <div>
+            <h1 class="bg-red-500">Hello</h1>
+        </div>
+    </div>
+
+    <script src="C:\Users\patld\Documents\Informatique\Vu_en_cours\Epita_Cyber1\HTML\paull\js\questionnaire.js"> 
+        const questions = [
+            {
+                question: "Forme de la terre",
+                reponses: [
+                    {
+                        valeur: "ronde",
+                        status: true
+                    },
+                    {
+                        valeur: "plate",
+                        status: false
+                    }
+                ]
+            },
+            {
+                question: "Qui etait Nestor Makhno",
+                reponses: [
+                    {
+                        valeur: "President urss",
+                        status: false
+                    },
+                    {
+                        valeur: "Anarchiste ukrainien",
+                        status: true
+                    }
+                ]
+            }
+        ]
+
+        const quizz = document.getElementById('quizz')
+        questions.forEach((el) => {
+            quizz.innerHTML += "<div>"
+            quizz.innerHTML += `<h2>${el.question}</h2>`
+            el.reponses.forEach((rep) => {
+                quizz.innerHTML += `<button id=${rep.status}>${rep.valeur}</button>`
+            })
+            quizz.innerHTML += "</div>"
+        })
+
+
+        document.querySelectorAll('button').forEach((button)=>{
+            button.addEventListener('click',(e)=>{
+                if (button.id == "true"){
+                    alert("Bonne reponse")
+                }else{
+                    alert("Mauvaise reponse")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
