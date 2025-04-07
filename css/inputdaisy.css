@@ -35,3 +35,16 @@
     --depth: 1;
     --noise: 0;
     }
+module.exports = {
+    theme: {
+        extend: {
+            spacing: {
+            '2': '0.5rem',
+            '6': '1.5rem',
+            '10': '2.5rem',
+            // ajoute ce que tu veux ici
+            }
+        }
+    }
+}
+    
