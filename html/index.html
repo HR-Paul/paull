@@ -9,12 +9,11 @@
     <script src="../js/main.js"></script>
 </head>
 <body class="bg-black-500">
-    <!--<div class="sticky top-0 w-full max-h-32 overflow-hidden z-50 relative">
-        <img src="../img/rainbow-background.jpg" class="w-full rotate-90 object-cover" />
-        <div class="absolute bottom-0 left-0 w-full text-center text-3xl font-bold text-white">
+    <!--<header class="header-rainbow sticky top-0 h-32 relative flex items-center justify-center">
+        <h1 class="text-3xl font-bold">
             Queerness
-        </div>
-    </div>-->
+        </h1>
+    </header>-->
     <div class="text-white text-sm px-4 py-2 mt-4">
         <p>
             
@@ -145,12 +144,14 @@
             Ce drapeau est celui des ...
         </p>
     </div>
-
+    
+    <footer class="w-full bg-black-500 text-gray-400 text-sm sticky bottom-0">
+        <a href="index.html" class="hover:text-white">Index</a>
+        <span class="text-gray-400">|</span>
+        <a href="questionnaire.html" class="hover:text-white">Me contacter</a>
+        <span class="text-gray-400">|</span>
+        <button class="cursor-pointer" onclick="bruteforce()">Me contacter facilement</button>
+        <span class="text-gray-600">|</span>
+        <a href="calculatrice.html">Calculatrice</a>
+    </footer>
 </body>
-<footer class="w-full bg-black-500 text-gray-400 text-sm">
-    <a href="questionnaire.html" class="hover:text-white">Me contacter</a>
-    <span class="text-gray-400">|</span>
-    <a href="../bruteforce " onclick="event.preventDefault();bruteforce()">Me contacter facilement</a> <!--I wanted the cursor to change while being hovered-->
-    <span class="text-gray-600">|</span>
-    <a href="calculatrice.html">Calculatrice</a>
-</footer>

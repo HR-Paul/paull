@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-        <title>Main page</title>
-        <link href="../css/output.css" rel="stylesheet" media="all">
-        <script src="../js/calculatrice.js"></script>
+        <meta charset="UTF-8">
+        <link href="../css/output.css" rel="stylesheet">
+        
+        <title>Calculatrice</title>
     </head>
-    <body>
-        <label for="first_input">Veuillez entrer le premier nombre</label>
-        <input type="number" id="first_input" name="finp"/>
-        <br><br>
-        <label for="second_input">Veuillez entrer le deuxieme nombre</label>
-        <input type="number" id="second_input" name="secinp"/>
-        <br>
-        <div class="button">
-            <button  onclick="operation('+')"> +</button>
+    <body class="text-white">
+        <script type="text/javascript" src="../js/calculatrice.js"></script>
+        <header class="sticky top-0 h- header-rainbow"></header>
+        <div class="flex justify-center items-center min-h-screen">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg w-80">
+                <!-- Affichage de la calculatrice -->
+                <div class="mb-4">
+                    <output id="output" class="w-full text-right text-3xl p-2 bg-gray-800 rounded-md max-width-60 width-60">0</output>
+                </div>
+                <!-- Claviers de la calculatrice -->
+                <div class="grid grid-cols-4 gap-4">
+                    <button class="btn" onclick="append_number(7)">7</button>
+                    <button class="btn" onclick="append_number(8)">8</button>
+                    <button class="btn" onclick="append_number(9)">9</button>
+                    <button class="btn" onclick="append_operator('+')">+</button>
+                    <button class="btn" onclick="append_number(4)">4</button>
+                    <button class="btn" onclick="append_number(5)">5</button>
+                    <button class="btn" onclick="append_number(6)">6</button>
+                    <button class="btn" onclick="append_operator('-')">-</button>
+                    <button class="btn" onclick="append_number(1)">1</button>
+                    <button class="btn" onclick="append_number(2)">2</button>
+                    <button class="btn" onclick="append_number(3)">3</button>
+                    <button class="btn" onclick="append_operator('x')">x</button>
+                    <button class="btn" onclick="append_number(0)">0</button>    
+                    <button class="btn" onclick="clear_output()">C</button>
+                    <button class="btn" onclick="calculate()">=</button>
+                </div>
+            </div>
         </div>
-        <div class="button">
-            <button onclick="operation('-')"> -</button>
-        </div>
-        <div class="button">
-            <button onclick="operation('*')"> *</button>
-        </div>
-        <p id="result"></p>
+    <footer class="w-full bg-black-500 text-gray-400 text-sm sticky">
+        <a href="index.html" class="hover:text-white">Index</a>
+        <span class="text-gray-400">|</span>
+        <a href="questionnaire.html" class="hover:text-white">Me contacter</a>
+        <span class="text-gray-400">|</span>
+        <button class="cursor-pointer" onclick="bruteforce()">Me contacter facilement</button>
+        <span class="text-gray-600">|</span>
+        <a href="calculatrice.html">Calculatrice</a>
+    </footer>
     </body>
 </html>

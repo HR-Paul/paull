@@ -35,16 +35,7 @@
     --depth: 1;
     --noise: 0;
     }
-module.exports = {
-    theme: {
-        extend: {
-            spacing: {
-            '2': '0.5rem',
-            '6': '1.5rem',
-            '10': '2.5rem',
-            // ajoute ce que tu veux ici
-            }
-        }
+header.header-rainbow {
+    background: linear-gradient(to right, 
+        #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
     }
-}
-    
