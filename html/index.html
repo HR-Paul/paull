@@ -9,149 +9,190 @@
     <script src="../js/main.js"></script>
 </head>
 <body class="bg-black-500">
-    <!--<header class="header-rainbow sticky top-0 h-32 relative flex items-center justify-center">
-        <h1 class="text-3xl font-bold">
-            Queerness
-        </h1>
-    </header>-->
+    <header class="header-rainbow top-0 h-32 flex">
+        <a href="index.html" class="absolute top-4 left-3 hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 1.707a1 1 0 00-1.414 0l-8 8A1 1 0 002 11h1v6a1 1 0 001 1h4a1 1 0 001-1v-4h2v4a1 1 0 001 1h4a1 1 0 001-1v-6h1a1 1 0 00.707-1.707l-8-8z" />
+            </svg>
+        </a>
+        <a href="questionnaire.html" class="absolute top-3 right-3 hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.94 5.34A2 2 0 014.83 4h10.34a2 2 0 011.89 1.34L10 11.46 2.94 5.34zM18 6.96v7.04a2 2 0 01-2 2H4a2 2 0 01-2-2V6.96l7.62 6.16a1 1 0 001.26 0L18 6.96z"/>
+            </svg>
+        </a>
+        <a href="calculatrice.html" class="absolute top-20 left-3 hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm0 2h10v4H7V4zm0 6h10v10H7V10zm2 2v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2z"/>
+            </svg>
+        </a>
+        <button class="cursor-pointer absolute right-3 top-20 1hover:opacity-80" onclick="bruteforce()" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6-7h-1V7a5 5 0 0 0-10 0v3H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zM8 7a4 4 0 0 1 8 0v3H8V7zm10 13H6v-8h12v8z"/>
+            </svg>
+        </button>
+        <div class="flex items-center justify-center w-full">
+            <h1 class="text-3xl font-bold">
+                Queerness
+            </h1>
+        </div>
+    </header>
     <div class="text-white text-sm px-4 py-2 mt-4">
         <p>
-            
+            Hihi rainbow
         </p>
-        <!--<div class="flex items-start space-x-2">
-            <svg class="w-6 h-6 text-[rgb(213,45,0)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(239,118,39)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(255,154,86)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(209,98,164)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(181,86,144)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(163,2,98)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des femmes qui sont romantiquement ou sexuellement attirées par d'autres femmes uniquement, 
-        </p>
-        <!--<div class="flex items-start space-x-2">
-            <svg class="w-6 h-6 text-[rgb(7,141,112)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(38,206,170)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(152,232,193)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(123,173,226)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(80,73,204)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(61,26,120)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des ...
-        </p>
-        <!--<div class="flex items-start space-x-2">
-            <svg class="w-6 h-6 text-[rgb(214,2,112)] ml-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(214,2,112)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(155,79,150)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(0,56,168)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(0,56,168)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des ...
-        </p>
-        <!--<div class="flex items-start space-x-2">
-            <svg class="w-6 h-6 text-[rgb(91,206,250)] ml-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(245,169,184)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(245,169,184)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-[rgb(91,206,250)]" fill="rgb(91,206,250)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des ...
-        </p>
-        <!--<div class="flex items-start space-x-2">
-            <svg class="w-6 h-6 text-white ml-8" fill="rgb(0,0,0)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-white" fill="rgb(163,163,163)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-white" fill="rgb(255,255,255)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-white" fill="rgb(128,0,128)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des ...
-        </p>
-        <!--<div class="flex items-start space-x-2">
-            <span class="ml-4"></span>
-            <span class="ml-8"></span>
-            <svg class="w-6 h-6 text-white" fill="rgb(255,33,140)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-white" fill="rgb(255,216,0)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-            <svg class="w-6 h-6 text-white" fill="rgb(33,177,255)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
-            </svg>
-        </div>-->
-        <p>
-            Ce drapeau est celui des ...
-        </p>
+        <br>
+        <div id="lesbos">
+            <div class="flex items-start space-x-2">
+                <svg class="w-6 h-6 text-[rgb(213,45,0)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(239,118,39)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(255,154,86)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(209,98,164)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(181,86,144)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(163,2,98)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <p>
+                Ce drapeau est celui des femmes qui sont romantiquement ou sexuellement attirées par d'autres femmes uniquement. Le nom qui les désigne est celui des lesbiennes, et le nom utilisé pour désigner une romance lesbienne est "WuhLuhWuh" (WomenLoveWomen / WLW)
+            </p>
+            <br>
+        </div>
+        <div id="gayyy">
+            <div class="flex items-start space-x-2">
+                <svg class="w-6 h-6 text-[rgb(7,141,112)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(38,206,170)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(152,232,193)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(123,173,226)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(80,73,204)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(61,26,120)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <br>
+            <p>
+                Ce drapeau est celui des hommes qui sont romantiquement ou sexuellement attirés par d'autres hommes. Le nom qui les désigne est celui des gays (on peut donc être gay sans être jovial). Aux débuts du mouvement LGBT, le G de Gay se trouvait avant le L de Lesbienne, mais les lesbiennes étant les seules personnes à aider les gays pendant la montée du sida, ils leur ont laissé la première position dans le sigle en signe de remerciement. 
+            </p>
+            <br>
+        </div>
+        <div id="I'm bi actually">
+            <div  class="flex items-start space-x-2">
+                <svg class="w-6 h-6 text-[rgb(214,2,112)] ml-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(214,2,112)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(155,79,150)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(0,56,168)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(0,56,168)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <p>
+                Ce drapeau est celui des personnes qui sont romantiquement ou sexuellement attirées par deux genres, généralement les hommes et les femmes. Le nom qui les désigne est celui des bisexuels, pas très dur de comprendre pourquoi si on a quelque peu de base en langue ancienne (ce qui est bien évidemment votre cas n'est-ce pas ? ಠಿ_ಠ)
+            </p>
+            <br>
+        </div>
+        <div id="femmasc">
+            <div  class="flex items-start space-x-2">
+                <svg class="w-6 h-6 text-[rgb(91,206,250)] ml-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(245,169,184)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(255,255,255)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(245,169,184)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-[rgb(91,206,250)]" fill="rgb(91,206,250)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <p>
+                Ce drapeau est celui des personnes transgenres/transsexuelles, le surnom qui les désigne est "trans" (on dit transsexuelles si elles ont faire une opération, mais il serait très indiscret de demander à une personne trans si c'est son cas sauf situations exceptionnelles). En raison de l'opposition entre les femmes et les hommes trans, on les démarque par les noms "transmascs" et "transfems".
+            </p>
+            <br>
+        </div>
+        <div id="Cake>>>">
+            <div  class="flex items-start space-x-2">
+                <svg class="w-6 h-6 text-white ml-8" fill="rgb(0,0,0)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-white" fill="rgb(163,163,163)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-white" fill="rgb(255,255,255)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-white" fill="rgb(128,0,128)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <p>
+                Ce drapeau est celui des personnes asexuelles, qui ne sont donc sexuellement attirées par personne, avec quelques variations minoritaires. Le surnom qui leur est donné est "ace", comme le nom anglais de l'as. Une phrase représentative est "I'd rather have cake" en parlant des relations sexuelles. 
+            </p>
+            <br>
+        </div>
+        <div id="Paon">
+            <div  class="flex items-start space-x-2">
+                <span class="ml-4"></span>
+                <span class="ml-8"></span>
+                <svg class="w-6 h-6 text-white" fill="rgb(255,33,140)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-white" fill="rgb(255,216,0)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+                <svg class="w-6 h-6 text-white" fill="rgb(33,177,255)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.586l1.172-1.414a4 4 0 115.656 5.656l-6.828 6.828-6.828-6.828a4 4 0 010-5.656z"></path>
+                </svg>
+            </div>
+            <p>
+                Ce drapeau est celui des personnes pansexuelles, qui sont romantiquement ou sexuellement attirées par tous les genres, sans avoir de préférences particulières. Cette identité est plus rarement vue et est souvent rapprochée de la bisexualité, la plupart des personnes pansexuelles se décriront également comme bisexuelles. Le surnom qui leur est donné est "pan".
+            </p>
+            <br>
+        </div>
     </div>
     
-    <footer class="w-full bg-black-500 text-gray-400 text-sm sticky bottom-0">
-        <a href="index.html" class="hover:text-white">Index</a>
-        <span class="text-gray-400">|</span>
-        <a href="questionnaire.html" class="hover:text-white">Me contacter</a>
-        <span class="text-gray-400">|</span>
-        <button class="cursor-pointer" onclick="bruteforce()">Me contacter facilement</button>
-        <span class="text-gray-600">|</span>
-        <a href="calculatrice.html">Calculatrice</a>
+    <footer class="w-full bg-indigo-950 text-gray-400 text-sm fixed bottom-1 flex justify-between items-center h-7">
+        <div class="ml-3">Crédits : </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2"> <!--Indépendant, a moitié à gauche, plus à gauche de la moitié de sa largeur-->
+            <a href="https://github.com/HR-Paul">Paul Le Dévédec</a>
+            <span class="ml-2 mr-2">|</span>
+            <a href="https:www.epiqueer.fr" >Epiqueer</a>
+        </div>
     </footer>
 </body>
