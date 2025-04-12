@@ -31,7 +31,7 @@ const questions=[
             "omnisexuel",
             "aromantique",
             "agenré",
-            "allosexuels"
+            "allosexuels"   
         ],
         "image":false
     },
@@ -117,13 +117,17 @@ function nextQuestion() {
 function showEndMessage() {
     fetch(triedpath + ".html", { method: "GET" })
         .then(response => {
-            if (response.status === 200) {
+            if (response.status === 200) 
+            {
                 window.location.replace(triedpath + ".html")
-            } else {
+            } 
+            else 
+            {
                 showFailureMessage()
             }
         })
-        .catch(error => {
+        .catch(error => 
+        {
             console.error(error)
             showFailureMessage()
         })
