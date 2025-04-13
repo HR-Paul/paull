@@ -91,6 +91,12 @@ function calculate()
     {
         user.push(0)
     }
-    document.getElementById("output").textContent=user[0]
-    user=[]
+    if (user[0]===713705)
+    {
+        document.getElementById("output").textContent="SOLEIL"
+    }
+    else
+    {
+        document.getElementById("output").textContent=user[0]
+    }
 }

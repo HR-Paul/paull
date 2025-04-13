@@ -3,7 +3,7 @@ ind_quest=0
 
 const questions=[
     {
-        "question":"Lequel de ces drapeaux n'a jamais représenté les LGBT+ ?",
+        "question":"Lequel de ces drapeaux n'a jamais représenté la cause LGBT+ ?",
         "réponses":
         [
             "../img/Original rainbow.png",
@@ -19,7 +19,7 @@ const questions=[
         [
             "../img/Gay_Flag.svg",
             "../img/Aromantic_Flag.svg",
-            "../img/Mauritius_Flag.webp",
+            "../img/fake_stripes_flag.jpg",
             "../img/Nonbinary_Flag.svg"
         ],
         "image":true
@@ -31,7 +31,7 @@ const questions=[
             "omnisexuel",
             "aromantique",
             "agenré",
-            "allosexuels"   
+            "allosexuels"
         ],
         "image":false
     },
